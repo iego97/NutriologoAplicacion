@@ -14,6 +14,9 @@
 		3D78C8072282467B0060B15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D78C8052282467B0060B15D /* LaunchScreen.storyboard */; };
 		3D78C8122282467C0060B15D /* nutriologoAplicacionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C8112282467C0060B15D /* nutriologoAplicacionTests.swift */; };
 		3D78C81D2282467C0060B15D /* nutriologoAplicacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C81C2282467C0060B15D /* nutriologoAplicacionUITests.swift */; };
+		3D78C83022826A520060B15D /* Dia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C82F22826A520060B15D /* Dia.swift */; };
+		3D78C83222826B750060B15D /* Semana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C83122826B750060B15D /* Semana.swift */; };
+		3D78C83422826D820060B15D /* ViewControllerDia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78C83322826D820060B15D /* ViewControllerDia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3D78C8182282467C0060B15D /* nutriologoAplicacionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriologoAplicacionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D78C81C2282467C0060B15D /* nutriologoAplicacionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriologoAplicacionUITests.swift; sourceTree = "<group>"; };
 		3D78C81E2282467C0060B15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D78C82F22826A520060B15D /* Dia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dia.swift; sourceTree = "<group>"; };
+		3D78C83122826B750060B15D /* Semana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semana.swift; sourceTree = "<group>"; };
+		3D78C83322826D820060B15D /* ViewControllerDia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +103,11 @@
 		3D78C7FB2282466E0060B15D /* nutriologoAplicacion */ = {
 			isa = PBXGroup;
 			children = (
+				3D78C82C22825AB40060B15D /* views */,
+				3D78C82B22825A9D0060B15D /* viewController */,
+				3D78C82A22825A960060B15D /* models */,
 				3D78C7FC2282466E0060B15D /* AppDelegate.swift */,
-				3D78C7FE2282466E0060B15D /* ViewController.swift */,
-				3D78C8002282466F0060B15D /* Main.storyboard */,
 				3D78C8032282467B0060B15D /* Assets.xcassets */,
-				3D78C8052282467B0060B15D /* LaunchScreen.storyboard */,
 				3D78C8082282467B0060B15D /* Info.plist */,
 			);
 			path = nutriologoAplicacion;
@@ -123,6 +129,33 @@
 				3D78C81E2282467C0060B15D /* Info.plist */,
 			);
 			path = nutriologoAplicacionUITests;
+			sourceTree = "<group>";
+		};
+		3D78C82A22825A960060B15D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C82F22826A520060B15D /* Dia.swift */,
+				3D78C83122826B750060B15D /* Semana.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3D78C82B22825A9D0060B15D /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C7FE2282466E0060B15D /* ViewController.swift */,
+				3D78C83322826D820060B15D /* ViewControllerDia.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		3D78C82C22825AB40060B15D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3D78C8002282466F0060B15D /* Main.storyboard */,
+				3D78C8052282467B0060B15D /* LaunchScreen.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D78C83222826B750060B15D /* Semana.swift in Sources */,
 				3D78C7FF2282466E0060B15D /* ViewController.swift in Sources */,
+				3D78C83422826D820060B15D /* ViewControllerDia.swift in Sources */,
+				3D78C83022826A520060B15D /* Dia.swift in Sources */,
 				3D78C7FD2282466E0060B15D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
